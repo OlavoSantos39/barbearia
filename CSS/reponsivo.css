@@ -1,0 +1,55 @@
+/* Estilos gerais para telas pequenas */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .info {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .agenda-box {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .agenda-box h2 {
+    font-size: 18px;
+  }
+
+  ul li {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
