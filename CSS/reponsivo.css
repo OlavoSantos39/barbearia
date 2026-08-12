@@ -1,7 +1,8 @@
 /* Estilos gerais para telas pequenas */
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: auto;
+    background-size: cover;
   }
 
   .container {

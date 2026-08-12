@@ -13,7 +13,7 @@ body{
     rgba(0, 0, 0, 0.7)
   ),
 
-  url("Fundo.jpg");
+  url("../imagens/Fundo.jpg");
 
   background-size:cover;
 
