@@ -1,0 +1,178 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+
+  background:
+  linear-gradient(
+    rgba(0, 55, 255, 0.751),
+    rgba(0, 0, 0, 0.7)
+  ),
+
+  url("Fundo.jpg");
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  min-height:100vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  color:white;
+}
+
+.overlay{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+.container{
+
+  width:100%;
+  max-width:420px;
+
+  background:rgba(0,0,0,0.75);
+
+  backdrop-filter:blur(5px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  padding:25px;
+
+  border-radius:20px;
+
+  box-shadow:
+  0 0 30px rgba(0,0,0,0.5);
+}
+
+.logo{
+  width:150px;
+  display:block;
+  margin:0 auto 15px;
+}
+
+h1{
+  text-align:center;
+  color:#00aaff;
+  margin-bottom:10px;
+}
+
+.info{
+  text-align:center;
+  font-size:14px;
+  margin-bottom:5px;
+  color:#ddd;
+}
+
+form{
+  margin-top:20px;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input,
+select,
+button{
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:10px;
+
+  outline:none;
+}
+
+input,
+select{
+  background:#222;
+  color:white;
+}
+
+button{
+
+  background:
+  linear-gradient(
+    90deg,
+    #0066ff,
+    #ff0000
+  );
+
+  color:white;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+.agenda-box{
+
+  margin-top:25px;
+
+  background:#111;
+
+  padding:15px;
+
+  border-radius:15px;
+
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.agenda-box h2{
+
+  text-align:center;
+
+  margin-bottom:15px;
+
+  color:#00aaff;
+}
+
+ul{
+  list-style:none;
+}
+
+li{
+
+  background:#1f1f1f;
+
+  padding:12px;
+
+  border-radius:10px;
+
+  margin-bottom:10px;
+
+  border-left:4px solid #ff0000;
+}
+
+@media(max-width:500px){
+
+  .container{
+    padding:20px;
+  }
+
+}

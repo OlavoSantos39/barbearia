@@ -25,6 +25,8 @@
           </p>
           <form id="login">
 
+
+
             <h2>LOGIN</h2>
             <p>
               <label><i class="fa-solid fa-at"></i></label>
@@ -35,11 +37,13 @@
               <input class="dados" type="password" required placeholder="Digite sua senha" />
             </p>
         
-              <input class="btn" type="button" value="Entrar" onclick="entrar" />
+              <input class="btn" type="button" value="Entrar" onclick="entrar()" />
             <a href="#cadastro">Não tem conta? Cadastre-se aqui!</a>
             <a href="#senha">Esqueceu sua senha? </a>
           </form>
         </div>
+
+
         <div id="cadastro">
           <img src="imagens/logo.png" class="logo" />
           <h1>Connect Barber Shop</h1>
@@ -76,10 +80,12 @@
                 required
               />
             </p>
-            <input class="btn" type="button" value="Cadastrar" onclick="cadastrar"/>
+            <input class="btn" type="button" value="Cadastrar" onclick="cadastrar()"/>
             <a href="#login">Voltat a tela de login!</a>
           </form>
         </div>
+
+
         <div id="senha">
           <img src="imagens/logo.png" class="logo" />
           <h1>Connect Barber Shop</h1>
@@ -96,12 +102,15 @@
                 <label><i class="fa-solid fa-at"></i></label>
                 <input class="dados" type="email" placeholder="Email para redefinir senha" required>
             </p>
-            <input class="btn" type="button" value="Redefinir" onclick="redefinir">
+            <input class="btn" type="button" value="Redefinir" onclick="redefinir()">
             <a href="#login">Voltar a tela de login!</a>
           </form>
         </div>
       </div>
     </div>
+
+
     <script src="index.js"></script>
+    <script src="validar.js"></script>
   </body>
 </html>

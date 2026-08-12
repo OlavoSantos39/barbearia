@@ -25,3 +25,35 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
     mostrarTela(telaId);
   });
 });
+
+function entrar() {
+  // Captura os valores dos inputs
+  const email = document.querySelector('#login input[type="text"]').value;
+  const senha = document.querySelector('#login input[type="password"]').value;
+
+  // Validação simples (você pode adaptar para validar com banco de dados ou API)
+  if (email === "" || senha === "") {
+    alert("Por favor, preencha todos os campos!");
+    return;
+  }
+
+  // Exemplo de validação fixa (substitua por lógica real)
+  const emailCorreto = "teste@barbershop.com";
+  const senhaCorreta = "12345678";
+
+  if (email === emailCorreto && senha === senhaCorreta) {
+    // Redireciona para a página de agendamento
+    window.location.href = "agendamento.html";
+  } else {
+    alert("Email ou senha inválidos!");
+  }
+}
+
+
+function cadastrar() {
+  window.alert("Cadastro realizado com sucesso!");
+}
+
+function redefinir() {
+  window.alert("Um link de redefinição foi enviado para seu email!");
+}

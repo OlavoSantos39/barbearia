@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+    <div class="overlay">
+
+    <div class="container">
+
+      <!-- LOGO -->
+      <img src="logo.png" class="logo">
+
+      <h1>CONNECT BARBER SHOP</h1>
+
+      <p class="info">
+        📍 Av. Prefeito Wall Ferraz, Bairro Promorar, Teresina - PI
+      </p>
+
+      <p class="info">
+        📞 86 99999-9999
+      </p>
+
+      <!-- FORMULÁRIO -->
+      <form id="formAgendamento">
+
+        <input
+          type="text"
+          id="nome"
+          placeholder="Nome do cliente"
+          required
+        >
+
+        <select id="servico">
+
+          <option>Corte</option>
+          <option>Barba</option>
+          <option>Combo</option>
+
+        </select>
+
+        <input
+         type="date"
+         id="data"
+         required
+        >
+        
+        <input
+          type="time"
+          id="hora"
+          required
+        >
+
+        <button type="submit">
+          AGENDAR
+        </button>
+
+      </form>
+
+      <!-- JANELA DE AGENDAMENTOS -->
+      <div class="agenda-box">
+
+        <h2> Próximos Agendamentos</h2>
+
+        <ul id="listaAgendamentos"></ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
