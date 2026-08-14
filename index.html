@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Connect Barber Shop</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/resp.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/resp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
     />
   </head>
   <body>
@@ -23,25 +25,42 @@
             <i class="fa-brands fa-whatsapp"></i>(86)9 9999-9999
           </p>
           <form id="login">
-
-
-
             <h2>LOGIN</h2>
             <p>
               <label><i class="fa-solid fa-at"></i></label>
-              <input class="dados" type="text" placeholder="Digite Seu email" required />
+              <input
+                class="dados"
+                type="text"
+                placeholder="Digite Seu email"
+                required
+              />
             </p>
             <p>
               <label><i class="fa-solid fa-key"></i></label>
-              <input class="dados" type="password" required placeholder="Digite sua senha" />
+              <input
+                class="dados"
+                type="password"
+                required
+                placeholder="Digite sua senha"
+              />
             </p>
-        
-              <input class="btn" type="button" value="Entrar" onclick="entrar()" />
-            <a href="#cadastro">Não tem conta? Cadastre-se aqui!</a>
+
+            <select name="escolhar" id="iescolha">
+              <option value="1">Cliente</option>
+              <option value="2">Barbearia</option>
+            </select>
+
+            <input
+              class="btn"
+              type="button"
+              value="Entrar"
+              onclick="entrar()"
+            />
+            <a href="#cadastro">Cadastrar Cliente.</a>
+            <a href="#">Cadastrar Barbearia.</a>
             <a href="#senha">Esqueceu sua senha? </a>
           </form>
         </div>
-
 
         <div id="cadastro">
           <img src="imagens/logo.png" class="logo" />
@@ -54,18 +73,29 @@
             <i class="fa-brands fa-whatsapp"></i>(86)9 9999-9999
           </p>
           <form id="cadastro">
-            <h2>CADASTRO</h2>
+            <h2>CADASTRO CLIENTE</h2>
             <p>
               <label><i class="fa-solid fa-at"></i></label>
-              <input class="dados" type="text" placeholder="Cadatre seu email" required />
+              <input
+                class="dados"
+                type="text"
+                placeholder="Cadatre seu email"
+                required
+              />
             </p>
             <p>
-              <label><i class="fa-solid fa-at"></i></label>
-              <input class="dados" type="text" placeholder="Confirme seu email" required />
+              <label><i class="fa-solid fa-phone"></i></label>
+              <input
+                class="dados"
+                type="text"
+                placeholder="Cadastre um telefone"
+                required
+              />
             </p>
             <p>
               <label><i class="fa-solid fa-key"></i></label>
-              <input class="dados"
+              <input
+                class="dados"
                 type="password"
                 placeholder="Cadastre sua senha"
                 required
@@ -73,17 +103,22 @@
             </p>
             <p>
               <label><i class="fa-solid fa-key"></i></label>
-              <input class="dados"
+              <input
+                class="dados"
                 type="password"
                 placeholder="Confirme sua senha"
                 required
               />
             </p>
-            <input class="btn" type="button" value="Cadastrar" onclick="cadastrar()"/>
+            <input
+              class="btn"
+              type="button"
+              value="Cadastrar"
+              onclick="cadastrar()"
+            />
             <a href="#login">Voltat a tela de login!</a>
           </form>
         </div>
-
 
         <div id="senha">
           <img src="imagens/logo.png" class="logo" />
@@ -98,16 +133,25 @@
           <form id="senha">
             <h2>REDEFINIR SENHA</h2>
             <p>
-                <label><i class="fa-solid fa-at"></i></label>
-                <input class="dados" type="email" placeholder="Email para redefinir senha" required>
+              <label><i class="fa-solid fa-at"></i></label>
+              <input
+                class="dados"
+                type="email"
+                placeholder="Email para redefinir senha"
+                required
+              />
             </p>
-            <input class="btn" type="button" value="Redefinir" onclick="redefinir()">
+            <input
+              class="btn"
+              type="button"
+              value="Redefinir"
+              onclick="redefinir()"
+            />
             <a href="#login">Voltar a tela de login!</a>
           </form>
         </div>
       </div>
     </div>
-
 
     <script src="JS/index.js"></script>
   </body>

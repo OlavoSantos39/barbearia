@@ -62,6 +62,39 @@ body{
   0 0 30px rgba(0,0,0,0.5);
 }
 
+.container h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+label i {
+  font-size: 30px;
+}
+
+form input {
+  width: 300px;
+}
+
+option {
+  color: #0066ff;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+}
+
+label.serv {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #222222;
+}
+
+form label {
+  cursor: pointer;
+}
+
+
 .logo{
   width:150px;
   display:block;

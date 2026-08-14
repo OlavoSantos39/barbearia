@@ -1,79 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/agendamento.css">
-    <link rel="stylesheet" href="CSS/reponsivo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/agendamento.css" />
+    <link rel="stylesheet" href="CSS/reponsivo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="overlay">
-
-    <div class="container">
-
-      <!-- LOGO -->
-      <img src="imagens/logo.png" class="logo">
-
-      <h1>CONNECT BARBER SHOP</h1>
-
-      <p class="info">
-        📍 Av. Prefeito Wall Ferraz, Bairro Promorar, Teresina - PI
-      </p>
-
-      <p class="info">
-        📞 86 99999-9999
-      </p>
-
-      <!-- FORMULÁRIO -->
-      <form id="formAgendamento">
-
-        <input
-          type="text"
-          id="nome"
-          placeholder="Nome do cliente"
-          required
-        >
-
-        <select id="servico">
-
-          <option>Corte</option>
-          <option>Barba</option>
-          <option>Combo</option>
-
-        </select>
-
-        <input
-         type="date"
-         id="data"
-         required
-        >
-        
-        <input
-          type="time"
-          id="hora"
-          required
-        >
-
-        <button type="submit">
-          AGENDAR
-        </button>
-
-      </form>
-
-      <!-- JANELA DE AGENDAMENTOS -->
-      <div class="agenda-box">
-
-        <h2> Próximos Agendamentos</h2>
-
-        <ul id="listaAgendamentos"></ul>
-
+      <div class="container">
+        <form>
+          <img src="imagens/logo.png" class="logo" />
+          <h1>Connect Barber Shop</h1>
+          <p class="info">
+            <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz,
+            Bairro Promorar, Teresina - PI
+          </p>
+          <p class="info">
+            <i class="fa-brands fa-whatsapp"></i>(86)9 9999-9999
+          </p>
+          <h2>AGENDE SEU SERVIÇO</h2>
+          <p>
+            <label style="margin-right: 25px;" for="nome"><i class="fa-regular fa-circle-user"></i></label>
+            <input type="text" placeholder="Nome do Cliente" />
+          </p>
+            <p class="opcao">
+                <label class="serv" for="serviço">Serviço</label>
+                <input type="radio" id="op1" name="grupo" value="Corte" />
+                <label for="opcao1">Corte</label><br />
+                <input type="radio" id="op2" name="grupo" value="Barba" />
+                <label for="opcao2">Barba</label><br />
+                <input type="radio" id="op3" name="grupo" value="Combo" />
+                <label for="opcao3">Combo</label>
+            </p>
+          <p>
+              <label class="serv" style="margin-right: 20px;" for="data">Agendamento</label>
+              <input style="width: 200px;" type="datetime-local"/>
+          </p>
+          <p>
+            <label class="serv" style="margin-right: 50px;" for="hora">Barbearia</label>
+            <select name="barbearia" id="barb">
+              <option value="opcao01">Barber Shop Promorar</option>
+              <option value="opcao02">Barber Shop Dirceu</option>
+              <option value="opcao03">Barber Shop Centro</option>
+            </select>
+          </p>
+        </form>
       </div>
-
     </div>
-
-  </div>
-
-  <script src="JS/agendamento.js"></script>
-</body>
+    <script src="JS/agendamento.js"></script>
+  </body>
 </html>
