@@ -6,6 +6,7 @@
     <title>Connect Barber Shop</title>
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/resp.css" />
+    <link rel="stylesheet" href="CSS/agendamento.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
@@ -57,7 +58,7 @@
               onclick="entrar()"
             />
             <a href="#cadastro">Cadastrar Cliente.</a>
-            <a href="#">Cadastrar Barbearia.</a>
+            <a href="#cadastro_barbearia">Cadastrar Barbearia.</a>
             <a href="#senha">Esqueceu sua senha? </a>
           </form>
         </div>
@@ -120,6 +121,45 @@
           </form>
         </div>
 
+        
+           <form id="cadastro_barbearia">
+             <img src="imagens/logo.png" class="logo" />
+                       <h1>Connect Barber Shop</h1>
+                       <p class="info">
+              <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz,
+              Bairro Promorar, Teresina - PI
+                       </p>
+                       <p class="info">
+              <i class="fa-brands fa-whatsapp"></i>(86)9 9999-9999
+                       </p>
+                       <h2>Cadastro Barbearia</h2>
+             <p>
+                <label><i class="fa-solid fa-at"></i></label>
+                <input
+                  class="dados"
+                  type="text"
+                  placeholder="Cadatre seu email"
+                  required
+                />
+              </p>
+              <p>
+                <label><i class="fa-solid fa-scissors"></i></label>
+                <input type="text" placeholder="Nome da barbearia" required>
+              </p>
+              <p>
+                <label><i class="fa-solid fa-phone"></i></label>
+                <input type="tel" placeholder="Cadastre um telefone">
+              </p>
+              <p>
+                <label><i class="fa-solid fa-key"></i></label>
+                <input type="password" placeholder="Cadastre uma senha">
+              </p>
+              <p>
+                <label><i class="fa-solid fa-key"></i></label>
+                <input type="password" placeholder="Confirme sua senha">
+              </p>
+              <a href="#login" >Voltar a tela de login</a>
+           </form>
         
 
         <div id="senha">
