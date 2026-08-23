@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imagens/Fundo.jpg);
+  background-size: cover;
+}
+
+:root {
+  --cor-container: #040927;
+  --cor-title: #00aaff;
+  --cor-texto: #ffffff;
+}
+
+.container-login .cliente {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: var(--cor-container);
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.container-login .cliente img {
+  display: flex;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+}
+
+.container-login .cliente .title {
+  color: var(--cor-title);
+  text-align: center;
+  padding: 8px;
+}
+
+.container-login .info {
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 10px;
+}
+
+.container-login .cliente .agendamento {
+    margin: auto;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--cor-texto);
+    height: auto;
+    border-radius: 20px;
+}
+
+.container-login .cliente .label {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-login .cliente select {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container-login .cliente .dados {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cliente .btn {
+    width: 100px;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.cliente .btn:hover {
+    background-color: var(--cor-title);
+    color: var(--cor-texto);
+    box-shadow: var(--cor-texto) 2px 4px 8px;
+}
+
+.cliente .res {
+    text-align: center;
+    margin: auto;
+    background-color: var(--cor-texto);
+    color: var(--cor-container);
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.cliente a {
+    color: var(--cor-texto);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+

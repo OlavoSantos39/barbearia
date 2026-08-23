@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia Login</title>
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Estilos/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-login">
+      <form id="login">
+
+          <img src="imagens/logo.png" />
+          <h2 class="title">Connect Barber Shop</h2>
+
+          <p class="info">
+            <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz, Bairro
+            Promorar, Teresina - PI <br />
+             <i class="fa-solid fa-location-dot"></i>Avenida José Francisco de Almeida Neto N° = 000, Teresina - PI<br>
+              <i class="fa-solid fa-location-dot"></i>Shopping da Cidade 2° piso box = 00, Teresina - PI<br>
+            <i class="fa-brands fa-whatsapp"></i>(86)9 9579-9484
+          </p>
+
+          <h2 class="title">Login</h2>
+          <p class="info">
+            <label for="email">E-MAIL</label><br>
+            <input type="email" class="dados" placeholder="Digite seu email" />
+          </p>
+
+          <p class="info">
+            <label for="senha">SENHA</label><br>
+            <input type="text" class="dados" placeholder="Digite sua senha">
+          </p>
+
+          <select name="escolha" id="login">
+            <option value="cliente">Cliente</option>
+            <option value="barbearia">Barbearia</option>
+          </select>
+
+          <input type="button" value="Entrar" class="btn" onclick="entrar()">
+
+          <a href="#cadastro-cliente">Cadastro Cliente</a>
+          <a href="#cadastro-barbearia">Cadastro Barbearia</a>
+          <a href="#esqueceu">Esqueceu a senha?</a>
+      </form>
+        <form id="cadastro-cliente">
+            <img src="imagens/logo.png" alt="">
+            <h2 class="title">
+                Connect Barber Shop</h2>
+                <p class="info"> <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz, Bairro
+            Promorar, Teresina - PI <br />
+             <i class="fa-solid fa-location-dot"></i>Avenida José Francisco de Almeida Neto N° = 000, Teresina - PI<br>
+              <i class="fa-solid fa-location-dot"></i>Shopping da Cidade 2° piso box = 00, Teresina - PI<br>
+            <i class="fa-brands fa-whatsapp"></i>(86)9 9579-9484</p>
+            <h2 class="title">Cadastro do Cliente</h2>
+
+            <p class="info">
+                <label for="email">E-MAIL</label><br>
+                <input id="iemail" type="email" class="dados" placeholder="Insira um email válido" required>
+            </p>
+            <p class="info">
+                <label for="nome">USUÁRIO</label><br>
+                <input id="iusuario" type="text" class="dados" placeholder="Insira um nome de usuário" required>
+            </p>
+            <p class="info">
+                <label for="tel">TELEFONE</label><br>
+                <input id="itel" type="tel" class="dados" placeholder="Insira um número de telefone válido">
+            </p>
+            <p class="info">
+                <label for="senha">SENHA</label><br>
+                <input id="isenha" type="password" class="dados" placeholder="Crie uma senha" required>
+            </p>
+            <p class="info">
+                <label for="senha">CONFIRME A SENHA</label><br>
+                <input iconsen type="password" class="dados" placeholder="Confirme sua senha" required>
+            </p>
+            <input type="button" value="Cadastrar" class="btn" onclick="cadastrarCliente()">
+        <a href="#login">Voltar a tela de login</a>
+        </form>
+        
+
+        <form id="cadastro-barbearia">
+            <img src="imagens/logo.png" alt="">
+            <h2 class="title">
+                Connect Barber Shop</h2>
+                <p class="info"> <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz, Bairro
+            Promorar, Teresina - PI <br />
+             <i class="fa-solid fa-location-dot"></i>Avenida José Francisco de Almeida Neto N° = 000, Teresina - PI<br>
+              <i class="fa-solid fa-location-dot"></i>Shopping da Cidade 2° piso box = 00, Teresina - PI<br>
+            <i class="fa-brands fa-whatsapp"></i>(86)9 9579-9484</p>
+            <h2 class="title">Cadastro da Barbearia</h2>
+            <p class="info">
+                <label for="email">E-MAIL</label><br>
+                <input type="email" class="dados" placeholder="Digite seu email">
+            </p>
+            <p class="info">
+                <label for="nome">NOME DA BARBEARIA</label>
+                <input type="text" class="dados" placeholder="Insira o nome da barbearia">
+            </p>
+            <p class="info">
+                <label for="cnpj">CNPJ</label><br>
+                <input type="number" class="dados" placeholder="Insira seu CNPJ">
+            </p>
+            <p class="info">
+                <label for="senha">SENHA</label><br>
+                <input type="password" class="dados" placeholder="Crie uma senha">
+            </p>
+             <p class="info">
+                <label for="senha">CONFIRMAR SENHA</label><br>
+                <input type="password" class="dados" placeholder="Confirme a senha">
+            </p>
+
+            <input type="button" value="Cadastrar" class="btn" onclick="cadastrarBarber()">
+            <a href="#login">Voltar a tela de login</a>
+        </form>
+
+        <form id="esqueceu">
+             <img src="imagens/logo.png" alt="">
+            <h2 class="title">
+                Connect Barber Shop</h2>
+                <p class="info"> <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz, Bairro
+            Promorar, Teresina - PI <br />
+             <i class="fa-solid fa-location-dot"></i>Avenida José Francisco de Almeida Neto N° = 000, Teresina - PI<br>
+              <i class="fa-solid fa-location-dot"></i>Shopping da Cidade 2° piso box = 00, Teresina - PI<br>
+            <i class="fa-brands fa-whatsapp"></i>(86)9 9579-9484</p>
+            <h2 class="title">Redefinir a Senha</h2>
+            <p class="info">
+                <label for="email">E_MAIL DE REDEFINAÇÃO</label><br>
+                <input type="email" class="dados" placeholder="Insira o email para receber o link de redefinição">
+            </p>
+            <input type="button" value="Enviar" class="btn" onclick="enviar()">
+            <a href="#login">Voltar a tela de login</a>
+        </form>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/cadastro_cliente.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do Cliente</title>
+    <link rel="stylesheet" href="Estilos/cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container-login">
+        <div class="cliente">
+            <img src="imagens/logo.png" alt="">
+            <p class="info">
+            <i class="fa-solid fa-location-dot"></i>Av. Prefeito Wall Ferraz, Bairro
+            Promorar N° = 000, Teresina - PI <br />
+             <i class="fa-solid fa-location-dot"></i>Avenida José Francisco de Almeida Neto N° = 000, Teresina - PI<br>
+              <i class="fa-solid fa-location-dot"></i>Shopping da Cidade 2° piso box = 00, Teresina - PI<br>
+            <i class="fa-brands fa-whatsapp"></i>(86)9 9579-9484
+          </p>
+            <h2 class="title">Área do Cliente</h2>
+            <div class="agendamento">
+                <p class="label"><label for="barbearia"><strong>ESCOLHA A BARBEARIA:</strong></label><br>
+                    <select name="barbearia" id="barb">
+                        <option value="escolha">Barber Shop Promorar(sede)</option>
+                        <option value="escolha02">Barber Shop Dirceu</option>
+                        <option value="escolha03">Barber Shop Centro</option>
+                    </select><br>
+                    ______________________________________
+                </p>
+                <p class="label">
+                    <label for="dia"><strong>ESCOLHA O DIA DO AGENDAMENTO:</strong></label><br>
+                    <input type="date" class="dados"><br>
+                     ______________________________________
+                </p>
+                <p class="label"><label for="hora"><strong>ESCOLHA A HORA PARA AGENDAMENTO:</strong></label><br>
+                    <input type="time" class="dados">
+                </p>
+            </div> <input type="button" value="Agendar" class="btn" onclick="agendar()">
+            <div class="res">
+
+            </div>
+           <a href="index.html">Sair</a>
+        </div>
+    </div>
+    <script src="js/agendamento_cliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-container:#040927;
+    --cor-title:#00AAFF;
+    --cor-texto:#FFFFFF;
+}
+
+body {
+    background-image: url(../imagens/Fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-container);
+    height: auto;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.container-login img {
+    display: flex;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container-login .title {
+    text-align: center;
+    color: var(--cor-title);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.container-login .info {
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 10px;
+}
+
+
+.container-login .dados {
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.container-login form#login select {
+    display: flex;
+    margin: auto;
+    padding: 8px;
+    border: none;
+    font-size: larger;
+}
+
+.container-login .btn {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    padding: 8px;
+    font-size: larger;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.container-login .btn:hover {
+    background-color: var(--cor-title);
+    color: var(--cor-texto);
+    transform: translateY(-5px);
+    box-shadow: var(--cor-texto) 2px 4px 8px;
+}
+
+.container-login a {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-texto);
+    padding: 5px;
+    margin-bottom: 10px;
+}
