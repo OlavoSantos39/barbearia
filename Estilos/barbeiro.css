@@ -15,7 +15,7 @@ body {
 /* Cabeçalho */
 header {
   background: #222;
-  color: #fff;
+  color: #00AAFF;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #00AAFF;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -126,7 +126,7 @@ form .dados {
 form .btn {
   margin-top: 15px;
   padding: 10px;
-  background: #222;
+  background: #00AAFF;
   color: #fff;
   border: none;
   border-radius: 5px;
