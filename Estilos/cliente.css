@@ -1,110 +1,89 @@
-@charset "UTF-8";
-
+/* Reset básico */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-image: url(../imagens/Fundo.jpg);
-  background-size: cover;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-:root {
-  --cor-container: #040927;
-  --cor-title: #00aaff;
-  --cor-texto: #ffffff;
+/* Cabeçalho */
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.container-login .cliente {
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Formulário de agendamento */
+form {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  background-color: var(--cor-container);
-  height: auto;
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 20px;
-  opacity: 0.9;
 }
 
-.container-login .cliente img {
-  display: flex;
-  width: 150px;
-  margin: auto;
-  padding: 10px;
+form label {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.container-login .cliente .title {
-  color: var(--cor-title);
-  text-align: center;
+form .dados {
   padding: 8px;
-}
-
-.container-login .info {
-    color: var(--cor-texto);
-    text-align: center;
-    padding: 10px;
-}
-
-.container-login .cliente .agendamento {
-    margin: auto;
-    width: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: var(--cor-texto);
-    height: auto;
-    border-radius: 20px;
-}
-
-.container-login .cliente .label {
-    margin: auto;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.container-login .cliente select {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.container-login .cliente .dados {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.cliente .btn {
-    width: 100px;
-    padding: 8px;
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    font-size: larger;
-    cursor: pointer;
-}
-
-.cliente .btn:hover {
-    background-color: var(--cor-title);
-    color: var(--cor-texto);
-    box-shadow: var(--cor-texto) 2px 4px 8px;
-}
-
-.cliente .res {
-    text-align: center;
-    margin: auto;
-    background-color: var(--cor-texto);
-    color: var(--cor-container);
-    width: 300px;
-    height: 100px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-}
-
-.cliente a {
-    color: var(--cor-texto);
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 30px;
-}
-
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius:
