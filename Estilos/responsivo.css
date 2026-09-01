@@ -12,7 +12,7 @@
         width: 90%;
     }
 }
-/*cliente.html*/
+/*cliente.html e barbearia.html*/
 @media (max-width:768px) {
     header {
         display: flex;
