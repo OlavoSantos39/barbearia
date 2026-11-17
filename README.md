@@ -1,4 +1,6 @@
-integrantes: Jerônimo farias da Silva  
+integrantes:
+Jerônimo farias da Silva  
+Olavo Rafael Pereira Santos
 💈 Connect Barber Shop
 Sistema web de barbearia com interfaces para clientes e barbearias e uma API REST para cadastro, login e agendamentos.
 📌 Sobre o projeto
